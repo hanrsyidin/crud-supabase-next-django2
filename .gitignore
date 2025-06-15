@@ -1,0 +1,43 @@
+# .gitignore
+
+# General
+# ---------
+# File environment, jangan pernah membagikan ini ke Git!
+.env
+.env.*
+!.env.example
+
+# File sistem operasi
+.DS_Store
+Thumbs.db
+
+# File log
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Konfigurasi IDE/Editor
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Backend (Django)
+# ------------------
+# Path relatif dari root proyek
+/backend/venv/
+/backend/__pycache__/
+/backend/*.pyc
+/backend/db.sqlite3
+/backend/staticfiles/
+/backend/media/
+
+# Frontend (Next.js)
+# --------------------
+# Path relatif dari root proyek
+/frontend/node_modules/
+/frontend/.next/
+/frontend/out/
+/frontend/build/
+/frontend/next-env.d.ts
